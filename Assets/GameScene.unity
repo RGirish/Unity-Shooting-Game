@@ -194,6 +194,7 @@ GameObject:
   - 33: {fileID: 354608434}
   - 65: {fileID: 354608433}
   - 23: {fileID: 354608432}
+  - 114: {fileID: 354608436}
   m_Layer: 0
   m_Name: Cube 2
   m_TagString: Untagged
@@ -256,12 +257,24 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 354608431}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.98, y: 2, z: 3.08}
+  m_LocalPosition: {x: 0.07, y: 2, z: 7.27}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!114 &354608436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 354608431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041d34a08af4e42b2bd8486bb25eec4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialHealth: 2
 --- !u!1 &400481679
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,6 +287,8 @@ GameObject:
   - 23: {fileID: 400481680}
   - 114: {fileID: 400481684}
   - 143: {fileID: 400481681}
+  - 114: {fileID: 400481685}
+  - 114: {fileID: 400481686}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -362,6 +377,34 @@ MonoBehaviour:
   speed: 3
   rotationSpeed: 2
   head: {fileID: 106320387}
+  maxHeadRotation: 80
+  minHeadRotation: -80
+--- !u!114 &400481685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 400481679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 553da3199e9cb4988942f70441af6dbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rocketPrefab: {fileID: 1000013669721600, guid: 53890e3e12f594d6c87c7c9c0fc693f1,
+    type: 2}
+  rocketBarrel: {fileID: 106320387}
+  reloadTime: 0.3
+--- !u!114 &400481686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 400481679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c189870fc5854e118c34b0c1483e457, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &880048713
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,6 +482,7 @@ GameObject:
   - 33: {fileID: 1469958436}
   - 65: {fileID: 1469958435}
   - 23: {fileID: 1469958434}
+  - 114: {fileID: 1469958438}
   m_Layer: 0
   m_Name: Cube 1
   m_TagString: Untagged
@@ -507,6 +551,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!114 &1469958438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1469958433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041d34a08af4e42b2bd8486bb25eec4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialHealth: 2
 --- !u!1 &1478057968
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,6 +661,7 @@ GameObject:
   - 33: {fileID: 1874102523}
   - 65: {fileID: 1874102522}
   - 23: {fileID: 1874102521}
+  - 114: {fileID: 1874102525}
   m_Layer: 0
   m_Name: Cube 3
   m_TagString: Untagged
@@ -673,6 +730,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!114 &1874102525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1874102520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041d34a08af4e42b2bd8486bb25eec4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialHealth: 2
 --- !u!1 &2084225619
 GameObject:
   m_ObjectHideFlags: 0

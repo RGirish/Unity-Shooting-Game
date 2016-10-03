@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BasicMovement : MonoBehaviour {
 
-    public float speed = 10.0f;
+    public float speed = 15.0f;
     public float rotationSpeed = 2.0f;
     public Transform head;
     public float maxHeadRotation = 80.0f;
